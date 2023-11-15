@@ -4,7 +4,7 @@ import axios from 'axios';
 import NoteTaking from './NoteTaking';
 import { useNavigate } from 'react-router-dom';
 const LoginForm = () => {
-    const { newNote, setNewNote ,setName} = useNewNote();
+    const { newNote, setNewNote } = useNewNote();
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [isLoggedin, setIsLoggedin] = useState('');
@@ -23,7 +23,7 @@ const LoginForm = () => {
         setToken(token);
         
         
-        setName(1) 
+        
         alert('Login successful!');
         
         
