@@ -13,7 +13,7 @@ const NoteTaking = () => {
   const addNote = async () => {
     try {
     const response=  await axios.post("http://localhost:5000/note", { note, userid: id });
-     
+     setNote("")
       
     setNewNote(newNote+1)
     } catch (error) {

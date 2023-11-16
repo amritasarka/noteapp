@@ -17,6 +17,8 @@ const SignupForm = () => {
       console.log(response, "response?.data?.message");
 
       alert("Signup successful! Please log in.");
+      setUsername('');
+      setPassword('');
     } catch (error) {
       console.error("Signup error:", error.message);
       setSignup(error?.response?.data?.message);
